@@ -10,7 +10,7 @@ while True:
     units = 'metric'
     url = api_endpoint + '?q=' + city + '&appid=' + apikey + '&units=' + units
     url = url.replace(' ', '%20')
-    print(url)
+
     with open('cities_names_list.txt') as f:
         cities_names = f.read()
 
